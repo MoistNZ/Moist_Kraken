@@ -1,0 +1,21 @@
+<h2>
+  Balances
+</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Currency</th>
+      <th scope="col">Balance</th>
+      <th scope="col">Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @balances.each do |balance| %>
+      <tr>
+        <td><%= balance[0] %></td>
+        <td>$<%= balance[1] %></td>
+        <td>$0.00</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
